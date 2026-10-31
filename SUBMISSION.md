@@ -4,7 +4,7 @@
 - Repository, final code commit: https://github.com/BAITC-Hacks/hack-623dda6b-a-few-good-men/commit/e3062178433394bb461dcb06794f0d62dd5274c0
   Branch `main` tip is this documentation commit; it differs from the code commit only in
   `README.md` and `SUBMISSION.md`, and `solution/` is byte-identical in both. The notebook's
-  `COMMIT` cell pins the tip of `main`, so its runs use exactly the submitted `solution/`.
+  `COMMIT` cell pins `e306217`, so its runs use exactly the submitted `solution/`.
 - Public Kaggle notebook, the saved version (built from `templates/kaggle_notebook.ipynb` without
   edits other than `REPO_URL`/`COMMIT`; the same link is in our README):
   https://www.kaggle.com/code/eralygainulla/soup-t4-runall-9c41
@@ -75,6 +75,12 @@ Per-run detail: base 87.60 s / 80.98 s wall, both 14,348 MiB peak; solution 37.3
 536 / 556 MiB peak. Training loop 57.73 s base vs 24.35 s ours. Solution source SHA-256
 `c622ff372b6a6259754104150f6812e075280f36c852a28b6c16da2e2ddf387d`, which is byte-identical to the
 `solution/` package of the final commit.
+
+The saved public notebook (`soup-t4-runall-9c41`, version 4) ran later on the same T4 and produced
+`base 98.59 s / solution 40.11 s` wall, peak `14,345 / 533 MiB`, eval loss `2.04964 / 2.04956`
+(`speedup 2.458x`, `memory base/solution 26.91x`, quality `-0.004%`) with all 10 checks passing
+and own kernels at 20.0% of the training loop. We report it separately because the two sessions
+were not measured back to back.
 
 - [x] All 10 checks of `harness/check_rules.py` passed
       (1 runs finished; 2 no ready-made kernel libraries; 3 own kernels run in training;
