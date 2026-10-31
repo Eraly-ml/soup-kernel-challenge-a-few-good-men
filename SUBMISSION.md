@@ -8,6 +8,11 @@
 - Public Kaggle notebook, the saved version (built from `templates/kaggle_notebook.ipynb` without
   edits other than `REPO_URL`/`COMMIT`; the same link is in our README):
   https://www.kaggle.com/code/eralygainulla/soup-t4-runall-9c41
+- Public mirror of the same commits (same SHA-1 history, so the notebook's pinned `COMMIT`
+  resolves there too): https://github.com/Eraly-ml/soup-kernel-challenge-a-few-good-men — used
+  because the platform repository is currently `private`, so an anonymous clone from a Kaggle
+  notebook fails. The mirror and the platform repository are the same objects: `git log` shows
+  `e306217` and `1bc211f` in both.
 - Demo video (up to 3 minutes): *[not ready — missing deliverable, see Limitations]*
 - Presentation: *[not ready — missing deliverable, see Limitations]*
 
